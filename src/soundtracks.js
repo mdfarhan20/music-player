@@ -34,5 +34,20 @@ export const soundtracks = [
         audio: "src/assets/music/top-gun-anthem.mp3",
         image: "src/assets/images/top-gun.jpg"
     },
+    {
+        id: 5,
+        title: "Back to the Future",
+        artist: "Alan Silvestri",
+        audio: "src/assets/music/back-to-the-future-theme.mp3",
+        image: "src/assets/images/back-to-the-future.jpg"
+    },
+    {
+        id: 6,
+        title: "Indiana Jones",
+        artist: "John Williams",
+        audio: "src/assets/music/indiana-jones-theme.mp3",
+        image: "src/assets/images/indiana-jones.jpg"
+    },
+    
 
 ];

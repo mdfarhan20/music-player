@@ -4,7 +4,7 @@ function SongImage({ songImage }) {
         <img
             src={ songImage } 
             alt="song-image"
-            className="w-80 rounded-lg"
+            className="border-2 border-white rounded-lg w-full"
         />
     );
 }

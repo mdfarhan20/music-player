@@ -1,21 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import SongImage from "components/SongImage";
 import SongInfo from "components/SongInfo";
 import PlayerControls from "components/PlayerControls";
-import {soundtracks} from "soundtracks";
+import MusicContext from "MusicContext";
 
 function MusicPlayer() {
-    const [currentTrack, setCurrentTrack] = useState(soundtracks[0]);
+    const { currentTrack } = useContext(MusicContext);
 
     return (
-        <div className="text-white grid gap-4 bg-gray-900 p-4 rounded-lg border border-purple-600">
+        <div className="bg-surface grid gap-y-4 p-6 text-white shadow-sm shadow-primary rounded-xl
+        ">
             <SongImage songImage={currentTrack.image} />
             <SongInfo songTitle={currentTrack.title} songArtist={currentTrack.artist} />
-            <PlayerControls 
-                audioTrack={currentTrack.audio}
-                currentTrack={currentTrack}
-                setCurrentTrack={setCurrentTrack}
-            />
+            <PlayerControls audioTrack={currentTrack.audio}/>
         </div>
     )
 }
