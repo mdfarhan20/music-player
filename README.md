@@ -12,7 +12,7 @@ This is a simple Music Player built using React.js
 
 ![](./screenshot.jpg)
 
-Live Site URL:  [Play Spyfall here](https://mdfarhan20.github.io/music-player/)
+Live Site URL:  [Music Player](https://mdfarhan20.github.io/music-player/)
 
 
 ## Built with
